@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #EEF5FF;
+    font-family:'Barlow Thin';
+}
+
+.content {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin: 10%;
+    background-color: white;
+}
+
+.bg {
+    background: url(./img/bg.jpg) no-repeat;
+    background-size: cover;
+    width: 50vw;
+    height: 100%;
+}
+
+.form {
+    width: 50vw;
+    height: 100%;
+}
+
+.form_wrapper {
+    margin: 5% 5% 0 5%;
+    display: grid;
+    grid-template-rows: repeat(11, 0.9fr);
+}
+
+.form_buttons {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form_buttons button {
+    width: 40%;
+    height: 3em;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_buttons button span {
+    font-size: 14px;
+    margin: 0 15% 0 15%;
+}
+
+.form_buttons button:first-child {
+    background-color: #255A9B;
+    color: white;
+}
+
+.form_buttons button:last-child {
+    background-color: #0076B6;
+    color: white;
+}
+
+.form_or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 20%;
+    border-bottom: 0.5px solid white;
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
+    opacity: 0.4;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.form_or span {
+    font-size: 12px;
+}
+
+.form_inputs {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input {
+    width: 38%;
+    height: 4em;
+    border: 0.5px solid rgba(128, 128, 128, 0.219);
+    padding: 5px;
+}
+
+.input:first-child {
+    border-left-color: #3698FB;
+}
+
+.input input {
+    width: 95%;
+    border: none;
+    outline: none;
+    height: 50%;
+}
+
+.input input::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.input label {
+    opacity: 0.4;
+}
+
+.h3 {
+    display: flex;
+    align-items: end;
+}
+
+.span {
+    font-size: 14px;
+}
+
+.radio {
+    border-color: #3698FB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+textarea {
+    height: 90%;
+    margin-left: 5px;
+    width: 40%;
+    resize: none;
+    border: 0.5px solid rgba(128, 128, 128, 0.1);
+}
+
+textarea::placeholder {
+    opacity: 0.3;
+}
+
+.agreement {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.account {
+    display: flex;
+    align-items: end;
+}
+
+.account button {
+    width: 40%;
+    height: 3em;
+    background-color: #3698FB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.bg img {
+    width: 18%;
+    margin: 5% 0 0 5%;
+}
