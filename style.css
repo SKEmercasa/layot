@@ -152,6 +152,7 @@ textarea {
 
 textarea::placeholder {
     opacity: 0.3;
+    color: black;
 }
 
 .agreement {
