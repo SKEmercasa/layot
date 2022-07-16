@@ -1,37 +1,42 @@
+@font-face {
+    font-family: 'Barlow Thin';
+    src: url(./font/BarlowCondensed-Thin.otf);
+}
+
 body {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EEF5FF;
-    font-family:'Barlow Thin';
+    font-family: 'Barlow Thin';
 }
 
 .content {
     display: flex;
     width: 90%;
-    margin: 10%;
+    margin: 3%;
     background-color: white;
 }
 
-.bg {
+.content__bg {
     background: url(./img/bg.jpg) no-repeat;
     background-size: cover;
     width: 50vw;
 }
 
-.form {
+.content__form {
     width: 50vw;
     height: 100%;
 }
 
-.form_wrapper {
+.form-wrapper {
     margin: 5% 5% 0 5%;
     display: grid;
     grid-template-rows: repeat(12, 0.9fr);
 }
 
-.form_buttons {
+.__buttons {
     justify-self: center;
     align-self: center;
     display: flex;
@@ -39,7 +44,7 @@ body {
     width: 100%;
 }
 
-.form_buttons button {
+.__buttons button {
     width: 40%;
     height: 3em;
     border-radius: 0;
@@ -50,22 +55,22 @@ body {
     align-items: center;
 }
 
-.form_buttons button span {
+.__buttons button span {
     font-size: 14px;
     margin: 0 15% 0 15%;
 }
 
-.form_buttons button:first-child {
+.__buttons button:first-child {
     background-color: #255A9B;
     color: white;
 }
 
-.form_buttons button:last-child {
+.__buttons button:last-child {
     background-color: #0076B6;
     color: white;
 }
 
-.form_or {
+.__or {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,11 +86,11 @@ hr {
     margin-right: 5px;
 }
 
-.form_or span {
+.__or span {
     font-size: 12px;
 }
 
-.form_inputs {
+.__inputs {
     justify-self: center;
     align-self: center;
     display: flex;
@@ -93,45 +98,45 @@ hr {
     width: 100%;
 }
 
-.input {
+.form-wrapper__inputs_input {
     width: 38%;
     height: 4em;
     border: 0.5px solid rgba(128, 128, 128, 0.219);
     padding: 5px;
 }
 
-.input:first-child {
+.form-wrapper__inputs_input:first-child {
     border-left-color: #3698FB;
 }
 
-.input input {
+.form-wrapper__inputs_input input {
     width: 95%;
     border: none;
     outline: none;
     height: 50%;
 }
 
-.input input::placeholder {
+.form-wrapper__inputs_input input::placeholder {
     color: black;
     opacity: 1;
     font-size: 15px;
     font-weight: bold;
 }
 
-.input label {
+.form-wrapper__inputs_input label {
     opacity: 0.4;
 }
 
-.h3 {
+.__h3 {
     display: flex;
     align-items: end;
 }
 
-.span {
+.__span {
     font-size: 14px;
 }
 
-.radio {
+.__radio {
     border-color: #3698FB;
     display: flex;
     justify-content: space-between;
@@ -151,18 +156,18 @@ textarea::placeholder {
     color: black;
 }
 
-.agreement {
+.__agreement {
     display: flex;
     justify-content: start;
     align-items: end;
 }
 
-.account {
+.__account {
     display: flex;
     align-items: end;
 }
 
-.account button {
+.__account button {
     width: 40%;
     height: 3em;
     background-color: #3698FB;
@@ -170,7 +175,8 @@ textarea::placeholder {
     border: none;
     border-radius: 5px;
 }
-.bg img {
+
+.content__bg img {
     width: 18%;
     margin: 5% 0 0 5%;
 }
